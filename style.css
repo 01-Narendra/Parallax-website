@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.container {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background {
+    transform: translateZ(-50px) scale(6.2);
+}
+.foreground {
+    transform: translateZ(-20px) scale(3.3);
+}
+.background, .foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+@font-face {
+    font-family: 'customFonts';
+    src: url(fonts/MORETHANHUMAN.TTF);
+}
+h1 {
+    position: absolute;
+    top: 8rem;
+    letter-spacing: 6px;
+    font-size: 4.5rem;
+    color: rgb(250, 249, 253);
+    text-shadow: 0 0 10px #FF0000;
+    font-family: customFonts;
+}
+
+section {
+    background-color: rgb(45,45,45);
+    color: white;
+    padding: 5rem 0;
+}
+
+.heros {
+    font-size: 4rem;
+    padding: 0 10rem;
+    text-shadow: 0 0 10px white;
+}
+
+.text {
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 10rem ;
+    margin: 5rem 0;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.actor {
+    position: absolute;
+    background-color: transparent;
+    top: 25%;
+    left: 25%;
+    transform: translateX(50%) translateY(50%); 
+}
+
+/* for captain america */
+@font-face {
+    font-family: 'america';
+    src: url(fonts/Queen\ of\ Camelot.otf);
+}
+.style1 {
+    font-size: 3rem;
+    font-family: america;
+    font-weight: 800;
+    color: rgb(8, 216, 223);
+    
+} 
+
+/* for Hulk */
+@font-face {
+    font-family: 'hulk';
+    src: url(fonts/Higher\ Jump.ttf);
+}
+.style2 {
+    font-size: 4rem;
+    font-family: hulk;
+    font-weight: 1000;
+    color: rgba(4, 103, 4, 0.636);
+}
+
+/* for doctor strange */
+@font-face {
+    font-family: 'doctor';
+    src: url(fonts/Billy\ Argel\ Font___.ttf);
+}
+.style3 {
+    font-family: doctor;
+    font-size: 8rem;
+    color: gold;
+    font-weight: 10;
+}
+
+
+.bg1 {
+    background-image: url("captain\ america.jpg");
+    opacity: 2;
+}
+
+.bg2 {
+    background-image: url("hulk.jpg");
+    opacity: 2;
+}
+
+.bg3 {
+    background-image: url("doctor\ strange.jpg");
+    opacity: 2;
+}
